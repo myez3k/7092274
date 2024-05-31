@@ -1,0 +1,281 @@
+
+/*================================== Product Section ============================================*/
+
+.our-products {
+    float: left;
+    width: 100%;
+}
+
+.our-products .BGColor_white {
+    background-color: #ffffff;
+    float: left;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.BGColor_lightBlue {
+    background-color: #e5f9ff;
+    float: left;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.products .title {
+    margin: 0 auto;
+    max-width: 750px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.products .title h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.products .title p {
+    font-size: 20px;
+    /* padding: 0 90px; */
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.products ul {
+    float: left;
+    width: 100%;
+    list-style: none;
+}
+
+.products ul li {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.products ul li h3 {
+    font-size: 22px;
+    line-height: 1.2;
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+.products ul li img {
+    width: 100%;
+    border: 1px solid #ececec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+.demo_title {
+    position: absolute;
+    top: 50%;
+    left: -90px;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 115px;
+    line-height: 1;
+    font-weight: 900;
+    opacity: .1;
+}
+
+
+/* .demo_title h2{
+	color: #000000;
+	font-size: 115px;
+	line-height: 1;
+	font-weight: 900;
+	opacity: .1;
+} */
+
+.products ul li figure,
+.products ul li a {
+    line-height: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+    .our-products .layout {
+        padding: 0 120px;
+    }
+    .demo_title {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .our-products .layout {
+        padding: 0 100px;
+    }
+    .demo_title {
+        font-size: 75px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .our-products .layout {
+        padding: 0 60px;
+    }
+    .demo_title {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .products ul li {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .our-products .BGColor_white,
+    .BGColor_lightBlue {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .our-products .layout {
+        padding: 0 15px;
+    }
+    .demo_title {
+        transform: rotate(0);
+        top: 35px;
+        left: 50%;
+        margin-left: -55px;
+        font-size: 28px;
+    }
+    .products .title h2 {
+        font-size: 28px;
+    }
+    .products .title p {
+        font-size: 18px;
+    }
+    .products ul li h3 {
+        font-size: 20px;
+    }
+    .products ul li {
+        width: 100%;
+    }
+    .product-box {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+/*================================== HTML Template for Single Sell ============================================*/
+.prodVarSection {
+	background: #004c7d;
+	padding: 25px 0;
+	position: relative;
+	left: 0;
+	right: 0;
+	width: 100%;
+	bottom: 0;
+	bottom: -300px;
+	z-index: 2;
+	box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+	transition: ease all 0.3s;
+}
+.prodVarSection.active {
+	bottom: 0;
+	position: fixed;
+	transition: ease all 0.3s;
+}
+.prodVarSection .closeIcon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: ease all 0.3s;
+}
+.prodVarSection .closeIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: ease all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prodVarSection h2 {
+	font-size: 26px;
+	text-align: center;
+	color: #fff;
+	line-height: 1.2;
+	margin: 0 auto;
+	font-family: "Inter",sans-serif;
+	font-weight: 700;
+}
+.prodVarSection ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	flex-wrap: wrap;
+}
+.prodVarSection .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5em;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+.prodVarSection .buttonBlock .btn {
+	padding: 15px 20px;
+	line-height: 1;
+	font-size: 18px;
+	margin-top: 0;
+	background-color: #0ea8e6 !important;
+	opacity: 1 !important;
+	border-radius: 6px;
+	font-family: "Inter",sans-serif;
+	outline: 0 !important;
+    border: 0 !important;
+    background-image: none !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-weight: 700;
+    color: #fff;
+
+}
+.prodVarSection .buttonBlock .btn:hover{
+	background-color: #eb4630!important;
+	color: #fff !important;
+}
+.prodVarSection .buttonBlock li:last-child .btn {
+	background-color: #eb4630;
+}
+.prodVarSection .buttonBlock li:last-child .btn:hover {
+	background-color: #0ea8e6;
+}
+@media (max-width: 1023px) {
+	.prodVarSection h2 {
+		font-size: 22px;
+	}
+	.prodVarSection .buttonBlock .btn {
+		font-size: 16px;
+	}
+}
+

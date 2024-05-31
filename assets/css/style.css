@@ -1,0 +1,1211 @@
+/*----------------------------------------------------------
+Theme Name: Dream Client
+Author: OG Web Solutions
+Version: 1.0
+------------------------------------------------------------/
+/**
+@File: Dream Client
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+**/
+
+/*============================================
+                    Index
+============================================
+ #. Global Style
+		## Prelaoder
+    	## Back to top
+
+ # Homepage
+		##Home banner With header
+		##Footer
+		##video be seen 
+		##Testimonial 
+		##To millions 
+		##Apply Section 
+		##To millions 
+
+ # Order page
+ # Thank you
+ # Privacy Policy
+ # Terms and Conditions
+
+
+/*============================================
+            #. Global Style
+============================================*/
+
+/*-- ## Google Font ##*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+body, html {overflow-x: hidden;}
+
+figure {margin: 0;}
+/* Headings */
+h1, h2, h3, h4, h5, h6 { padding: 0px; margin: 0px; }
+
+h1 {font-size: 77px;}
+
+h2 {font-size: 63px;}
+
+h3 {font-size: 27px;}
+
+h4 {font-size: 24px;}
+
+h5 {font-size: 20px;}
+
+h6 {font-size: 16px;}
+
+/* use for sub Heading */
+.sub-heading {text-align: center;}
+
+.sub-heading h2 {font-weight: 500;}
+
+.sub-heading p {font-weight: 400; font-size: 22px; padding: 0 40px;}
+
+@media screen and (max-width:1279px) {
+
+	.sub-heading h2 {font-size: 50px;}
+
+	.sub-heading p br {display: none;}
+}
+.sub-heading p{font-size:20px;}
+@media screen and (max-width:1023px){
+	.sub-heading p{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width:991px) {
+	.sub-heading h2 {font-size: 45px;}
+	.sub-heading p {font-size: 16px;}
+}
+
+@media screen and (max-width:767px) {
+	.sub-heading h2 {font-size: 30px;}
+	.sub-heading p{padding:0px;}
+}
+
+@media screen and (max-width:399px) {
+	.sub-heading h2 {font-size: 28px;}
+}
+/* Paragraph */
+p {padding: 0px; margin: 0px;}
+
+p:last-child {margin-bottom: 0;}
+
+ol, ul {margin-bottom: 0px;}
+
+a {
+	text-decoration: none;
+	outline: none;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	color: #2c2c2c;
+}
+/* Global image */
+img {max-width: 100%;}
+
+/*-- colors --*/
+.y-color {color: #fcdf2f;}
+
+/* Container */
+
+/* container{
+	max-width:1140px;
+} */
+
+/* inner container */
+.inner-container{max-width:1000px;}
+
+
+/* --Section Spacing-- */
+.pd-80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+@media screen and (max-width:1279px) {
+	.pd-80 {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	.pd-80 {
+		padding-top: 65px;
+		padding-bottom: 65px;
+	}
+}
+
+@media screen and (max-width:991px) {
+	.pd-80 {
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.pd-80 {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+}
+
+@media screen and (max-width:399px) {
+	.pd-80 {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+
+/* Global Form */
+
+input:focus, textarea:focus, select:focus, button:focus {outline: none;}
+
+label {font-weight: normal;}
+
+::-webkit-input-placeholder {color: #8c8c8c; opacity: 1;}
+
+::-moz-placeholder {color: #8c8c8c; opacity: 1;}
+
+:-ms-input-placeholder {color: #8c8c8c; opacity: 1;}
+
+:-moz-placeholder {color: #8c8c8c; opacity: 1;}
+
+
+/*-- Form Control --*/
+
+.form-control {
+	height: auto;
+	border-radius: 0;
+	padding: 5px 15px;
+	font-size: 14px;
+	
+}
+
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.form-control.error {
+	border-color: #f00;
+}
+
+label.error {
+	color: #f00;
+	padding-left: 12px;
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+/*--##Back To Top--*/
+
+.backtotop {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	height: 40px;
+	width: 40px;
+	background-color: #fff;
+	cursor: pointer;
+	border: 2px solid #ff2600;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+	border-radius: 10px;
+	opacity: 0.9;
+	transition: opacity 200ms linear;
+	display: none;
+}
+
+.backtotop::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -7px;
+	margin-top: -4px;
+	transform: rotate(-45deg);
+	height: 0px;
+	width: 0px;
+	border-width: 3px 3px 0 0;
+	border-style: solid;
+	padding: 5px;
+	border-color: #ff2600;
+}
+
+.backtotop:hover {
+	opacity: 1;
+	transition: opacity 200ms linear;
+}
+
+/* -- ##Preload Spinner --*/
+
+.preloadSpinner {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #ffffff;
+	z-index: 99999;
+}
+
+.preloadSpinner::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+	width: 100px;
+	height: 100px;
+	background-color: #f5f7fa;
+	border: 1px solid #9e1700;
+	border-top: 10px dotted #ff2600;
+	border-radius: 100%;
+	animation: spinner 500ms infinite ease-in-out;
+}
+
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media screen and (max-width:767.98px) {
+	.preloadSpinner::after {
+		width: 50px;
+		height: 50px;
+		margin-top: -25px;
+		margin-left: -25px;
+		border-top: 5px dotted #ff2600;
+	}
+}
+
+/* -- #Button --*/
+
+.main-btn {
+	font-size: 24px;
+	color: #000000;
+	text-transform: capitalize;
+	border-radius: 7px;
+	font-weight: 600;
+	display: inline-block;
+	transition-duration: 1s !important;
+	padding: 16px 35px;
+	text-align: center;
+	background: #ffb400;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.main-btn:hover {
+	color: #ffffff !important;
+	transition: all 0.2s ease;
+	background: #ffb400 !important;
+	border: 0px !important
+
+}
+
+.btn-check:focus+.btn, .btn:focus {
+	box-shadow: none;
+}
+
+.btn-primary, .btn-primary:hover{
+	border-color: transparent;
+}
+@media (max-width:991px) {
+	.main-btn {
+		font-size: 18px;
+		padding: 12px 30px;
+
+	}
+}
+/*-- #Button Ends --*/
+
+/*============================================
+		# Home page start here
+============================================*/
+
+/* ##Home banner With header start here */
+.banner {
+	background-image: url(../images/bg.jpg) !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+
+.btn-sec {
+	margin-top: 57px;
+}
+
+.banner-left {
+	margin-top: 80px;
+}
+
+.banner-left img {
+	margin-top: 20px;
+}
+
+/* Header css */
+.header {
+	position: absolute;
+	width: 100%;
+	font-weight: 600;
+	top: 20px;
+}
+
+.header .logo img {
+	max-width: 200px;
+	margin-left: 40px;
+}
+
+.header .logo a {
+	display: block;
+}
+
+.header .warning {
+	text-align: end;
+}
+
+.header .warning p {
+	font-size: 18px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background-color: rgba(0, 0, 0, .5);
+	display: inline-block;
+	border-radius: 50px 0 0 50px;
+}
+
+/* Responsive */
+@media only screen and (max-width :1279px) {
+	.header .warning p {
+		font-size: 15px;
+		padding: 16px;
+	}
+
+	.header .logo img {
+		margin-left: 25px;
+	}
+
+	.banner-left {
+		margin-top: 50px;
+	}
+
+	.banner-left h1 {
+		font-size: 55px;
+	}
+
+	.banner-left img {
+		max-width: 320px;
+	}
+
+	.banner {
+		background-position: 80% 100%;
+	}
+
+	.btn-sec {
+		margin-top: 46px;
+	}
+}
+
+@media only screen and (max-width :1023px) {
+	.header .warning p {
+		font-size: 14px;
+	}
+
+	.btn-sec {
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (max-width :991px) {
+	.banner-left {
+		margin-top: 140px;
+	}
+	.header .logo img {
+		margin-left: 0;
+	}
+
+	.logo {
+		text-align: center;
+	}
+
+	.header .warning {
+		margin-top: 15px;
+		text-align: center;
+		border-radius: 50px;
+	}
+
+	.header .warning p {
+		border-radius: 50px;
+	}
+
+	.banner {
+		background-position: right center;
+	}
+
+	.banner-left h1 {
+		font-size: 55px;
+	}
+
+}
+
+@media only screen and (max-width :767px) {
+	.header .warning p {
+		font-size: 12px;
+	}
+
+	.banner-left {
+		text-align: center;
+	}
+
+	.banner {
+		background-position: 27% 100%;
+	}
+
+	.banner-left h1 {
+		font-size: 42px;
+	}
+
+	.banner-left img {
+		max-width: 275px;
+	}
+}
+@media only screen and (max-width:414px){
+	.banner-left h1 {
+		font-size: 32px;
+	}
+	.banner-left img {
+		max-width: 225px;
+	}
+
+}
+@media only screen and (max-width :399px) {
+	.header .warning p {
+		margin: 0 10px;
+	}
+
+	.btn-sec {
+		margin-top: 30px;
+	}
+
+	.banner-left img {
+		margin-top: 12px;
+	}
+}
+
+/*-- Banner Ends --*/
+
+/* --##Footer--*/
+
+footer {
+	background: #2a2a2a;
+	padding-top: 55px;
+	padding-bottom: 55px;
+	border-top: 5px solid #ff4949;
+}
+
+footer .flogo {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+footer p {
+	padding: 0 55px;
+}
+
+footer ul {
+	list-style: none;
+	margin: 25px 0 20px;
+	display: flex;
+	justify-content: center;
+}
+
+footer li {
+	border-right: 2px solid #fff;
+	padding: 0 14px;
+	font-size: 16px;
+}
+
+footer li a:hover {
+	text-decoration: underline !important;
+}
+
+footer li:last-child {
+	padding-right: 0;
+	border-right: 0;
+}
+
+footer p, footer li a {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+footer p.copy_right {
+	font-size: 16px;
+	padding: 0 55px;
+	opacity: 0.5;
+}
+@media (max-width:1279px){
+	footer p, footer li a {
+		color: #ffffff;
+		font-size: 16px;
+	}
+}
+@media (max-width: 1023px) {
+	footer {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	footer p {
+		padding: 0 30px;
+	}
+	footer ul{
+		margin: 15px 0 10px;
+	}
+
+
+}
+
+@media (max-width:767px) {
+	footer p {
+		padding: 0px;
+	}
+	footer p, footer li a {
+		font-size: 14px;
+	}
+	footer p.copy_right {
+		padding: 0;
+		font-size: 14px;
+	}
+}
+
+/*-- ##video be seen section start here --*/
+
+.be-seen {
+	background-color: #ffffff;
+}
+
+.be-seen video {
+	margin-top: 50px;
+}
+
+.counter {
+	background-color: #faf7e4;
+	padding-top: 223px;
+	text-align: center;
+	margin-top: -200px;
+}
+
+.counter h3 {
+	font-size: 65px;
+	color: #f60b0b;
+}
+
+/* responsive */
+@media only screen and (max-width :1279px) {
+	.counter h3 {
+		font-size: 55px;
+	}
+
+	.be-seen video {
+		font-size: 40px;
+	}
+
+	.be-seen p br {
+		display: none;
+	}
+
+	.counter {
+		padding-top: 200px;
+	}
+}
+
+@media only screen and (max-width :991px) {
+	.counter h3 {
+		font-size: 45px;
+	}
+}
+
+@media only screen and (max-width :767px) {
+	.be-seen p {
+		font-size: 16px;
+	}
+
+	.counter h3 {
+		font-size: 40px;
+	}
+
+	.counter {
+		padding-top: 100px;
+	}
+
+	.counter {
+		margin-top: -135px;
+	}
+
+	.counter h3 {
+		margin-top: 35px;
+	}
+
+	.be-seen video {
+		margin-top: 36px;
+	}
+}
+
+@media only screen and (max-width :399px) {
+	.counter h3 {
+		margin-top: 26px;
+	}
+
+	.counter h3 {
+		font-size: 35px;
+	}
+
+	.be-seen video {
+		margin-top: 30px;
+	}
+}
+
+/*-- #video be seen section ends here --*/
+
+
+/*-- ##Testimonial section start Here --*/
+.testimonials {
+	background-image: url(../images/vector-img.png);
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	background-position: center center;
+	background-size: cover;
+}
+
+.testimonials-sec {
+	margin-top: 70px;
+}
+
+.testimonials-sec h3 {
+	font-family: 'Playfair Display', serif;
+}
+
+.tm-section {
+	padding: 20px 20px;
+	box-shadow: 0 1px 20px rgb(0 0 0 / 15%);
+}
+
+.tm-section h3 {
+	font-size: 28px;
+	margin-top: 30px;
+
+}
+
+.tm-section img {
+	border-radius: 100%;
+	height:104px;
+	width: 104px;
+
+}
+
+.tm-section h4 {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.tm-section p {
+	color: #b9b9b9;
+	font-size: 14px;
+	letter-spacing:3px;
+}
+
+/* Responsive */
+@media only screen and (max-width :1365px) {
+	.tm-section h3 {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width :1279px) {
+	.testimonials-sec {
+		margin-top: 40px;
+	}
+
+	.tm-section h3 {
+		margin-top: 20px;
+	}
+
+	.tm-section h4 {
+		margin-top: 15px;
+		margin-bottom: 8px;
+	}
+	.tm-section h3 {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width :991px) {
+	.testimonials-sec {
+		margin-top: 18px;
+	}
+
+	.tm-section h3 {
+		margin-top: 16px;
+	}
+
+	.tm-section {
+		padding: 0px;
+	}
+
+	.tm-section h3 {
+		font-size: 17px;
+	}
+
+	.tm-section h4 {
+		margin-top: 11px;
+		margin-bottom: 8px;
+		font-size: 18px;
+	}
+
+}
+@media only screen and (max-width :991px){
+	.tm-section{
+		margin-top:30px;
+		padding: 20px;
+	}
+}
+/*-- ##Testimonial section ends Here --*/
+
+
+/*--  ##To millions section start Here --*/
+	.to-millions {
+		background-color: #fcdede;
+	}
+
+	.million-video {
+		margin-top: 40px;
+	}
+
+	.double-video video {
+		padding-top: 17px;
+	}
+
+	@media only screen and (max-width :767px) {
+		.million-video {
+			margin-top: 30px;
+		}
+	}
+
+	/*-- #To millions section Ends Here --*/
+
+
+	/*-- ##Apply Section Start Here --*/
+	.apply {
+		background-image: url(../images/apply.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+
+	}
+
+	.apply .btn-sec {
+		margin-top: 35px;
+	}
+
+	@media only screen and (max-width :767px) {
+		.apply .btn-sec {
+			margin-top: 30px;
+		}
+	}
+
+	/*-- #Apply Section Ends Here --*/
+
+/*============================================
+		#Order page start here
+============================================*/
+
+	/* ##Order banner Start hare*/
+	.order .banner-left h1{
+		color:#fcdf2f;
+		font-size:48px;
+	}
+	.order .banner-left p{
+		font-size:20px;
+		font-weight: 400;
+	}
+	.order .banner-left{
+		margin-top:45px;
+	}
+	
+	@media only screen and (max-width :1023px){
+		.order .banner-left h1 {
+			color: #fcdf2f;
+			font-size: 44px;
+		}
+	}
+	@media only screen and (max-width:991px){
+		.order {
+			background-position: 0% 100%;
+		}
+		.order .banner-left {
+			margin-top: 106px;
+		}
+		.order .banner-left p br{
+			display:none;
+		}
+		.order .banner-left h1{
+			font-size: 46px;
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+		/* Responsive */
+		@media only screen and (max-width:767px){
+			.order .banner-left h1{
+				font-size: 40px;
+			}
+			.order .banner-left h3{
+				font-size: 19px;
+			}
+			.order .banner-left p {
+				font-size: 18px;
+			}
+		}
+		@media only screen and (max-width:399px){
+			.order .banner-left h1{
+				font-size: 30px;
+			}
+			.order .banner-left {
+				margin-top: 134px;
+			}
+		}
+	}
+	 @media (min-width:991px) and (max-width:1599px){
+		.order .banner-left{
+			background-color: rgba(0, 0, 0, .5);
+			padding: 35px 18px;
+		}
+	} 
+	 /* ##Order banner Ends hare*/
+
+	/*--##Order video & form section start here  --*/
+
+	.video-form p{
+		margin-top:45px;
+		font-size: 18px;text-align: center;
+		color:#474747;
+	}
+	.video-form h4{
+		font-size: 18px;
+		text-align: center;
+		margin-top:20px;
+	}
+
+	/*-- ##Rating css start here --*/
+	.rating > span:hover:before {
+		content: "\2605";
+		position: absolute;
+		
+	 }
+	 .rating {
+		unicode-bidi: bidi-override;
+		direction: rtl;
+		font-size: 30px;
+		cursor: pointer;
+		text-align: center;
+	  }
+	  .rating > span:hover:before,
+	  .rating > span:hover ~ span:before {
+		 content: "\2605";
+		 position: absolute;
+		 color: #ffb400;
+	  }
+	  .rating {
+		unicode-bidi: bidi-override;
+		direction: rtl;
+	  }
+	  .rating > span {
+		display: inline-block;
+		position: relative;
+		width: 1.1em;
+	  }
+	  .rating > span:hover:before,
+	  .rating > span:hover ~ span:before {
+		 content: "\2605";
+		 position: absolute;
+	  }
+	/*-- ##Rating css ends here --*/
+
+	/*-- ##Form section start here  --*/
+	.form-section{
+		padding: 30px 30px 30px 30px;
+		box-shadow: 0px 3px 15px 0px rgb(0 0 0 / 24%); 
+		border-radius: 5px ;
+	}
+	.form-section form{
+		margin-top:10px;
+	}
+	.form-section form label{
+		font-size: 14px;
+		color:#474747;
+		margin-top:17px;
+		
+	}
+	.form-section form input{
+		height:45px;
+		border-radius:5px;
+		margin-top: 5px;
+	
+	}
+	.form-section form textarea{
+		height:90px;
+		margin-top: 5px;
+		border-radius:5px;
+		
+	}
+	.form-section form .btn-sec {
+		margin-top: 40px;
+	}
+	 .form-control:focus{
+		color:#212529;
+		border-color:#f00;
+	}
+	/*-- ##Form section ends here --*/
+
+	/* Responsive */
+
+
+	@media only screen and (max-width:991px){
+		.video-form p{
+			font-size: 16px;
+		}
+		.form-section{
+			margin-top: 29px;
+		}
+		.form-section form .btn-sec {
+			margin-top: 27px;
+		}
+	}
+	@media only screen and (max-width:767px){
+		.video-form p {
+			margin-top: 15px;
+		}
+	}
+	@media only screen and (max-width:399px){
+		.video-form h4{
+			margin-top:14px;
+		}
+		.video-form	h3 {
+			font-size: 23px;
+		}
+		.form-section{
+			padding: 20px;
+		}
+		.form-section form{
+			margin-top: 0;
+		}
+	}
+
+	/*-- ##order video & form section Ends here  --*/
+
+/*============================================
+		# Thank you page 
+============================================*/
+
+	.thank-you .banner-left h1{
+		font-size: 72px;
+	}
+	.thankyou-sec{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	/* Responsive */
+	@media only screen and (max-width:991px){
+		.thank-you .banner-left h1{
+			font-size:63px;
+		}
+	}
+	@media only screen and (max-width:767px){
+		.thank-you .banner-left h1{
+			font-size:40px;
+
+		}}
+	.thanks-video .head{
+		background-color: #fcdf2f;
+		padding: 10px;
+	}
+	.step-2{
+		width: 100%;
+		margin-top: 40px;
+		text-align: center;
+	}
+	.step-2 a{
+		font-size: 60px;
+	}
+	.thankyou-sec .btn-sec {
+		margin-top: 30px;
+	}
+	@media only screen and (max-width:991px){
+
+		.thankyou-sec{
+			padding-top:30px;
+			padding-bottom: 30px;
+		}
+		.step-2 a {
+			font-size: 50px;
+		}
+		.thankyou-sec p{
+			font-size: 16px;
+		}
+	}
+	@media only screen and (max-width:767px){
+		.step-2 a {
+			font-size: 40px;
+		}
+
+	}
+	@media only screen and (max-width:399px){
+		.thanks-video .head{
+			padding: 10px 4px;
+		}
+	}
+/*-- ##Thank you page ends here --##*/
+	
+
+/*============================================
+		# Privacy Policy
+============================================*/
+
+/*-- #Privacy policyterms Section --*/
+
+.privacy .sectionPadding.inner-banner {
+    padding-bottom: 50px !important;
+}
+
+.privacy .section-head h1 span::after {
+    display: none;
+}
+
+.privacypolicyterms h2 {
+    font-size: 32px;
+}
+
+.privacypolicyterms h3 {
+    font-size: 24px;
+}
+
+.privacypolicyterms h4 {
+    font-size: 22px;
+}
+
+
+
+.privacypolicyterms p a {
+    color: #1577da;
+}
+
+.privacypolicyterms li {
+    font-size: 18px;
+}
+
+.privacypolicyterms li {
+    list-style-type: disc;
+}
+
+.privacypolicyterms .highlight {
+    font-weight: 500;
+}
+
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .privacypolicyterms h2 {
+        font-size: 28px;
+    }
+    .privacypolicyterms h3 {
+        font-size: 22px;
+    }
+    .privacypolicyterms h4 {
+        font-size: 20px;
+    }
+    .privacypolicyterms p,
+    .privacypolicyterms li {
+        font-size: 16px;
+    }
+   
+}
+
+@media (max-width:568px) {
+    .privacy .sectionPadding.inner-banner {
+        padding-bottom: 30px !important;
+    }
+}
+
+@media (max-width:399px) {
+    .privacy .sectionPadding.inner-banner {
+        padding-top: 115px !important;
+        padding-bottom: 30px !important;
+    }
+    .privacypolicyterms h2 {
+        font-size: 25px;
+    }
+    .privacypolicyterms h3 {
+        font-size: 21px;
+    }
+}
+ /*============================================
+		# Terms and Conditions
+============================================*/
+.privacypolicyterms p{
+ margin-bottom:15px;
+}
+
+/* Responsive */
+@media (max-width:991px) {
+    .bann h1 {
+        font-size: 50px !important;
+    }
+}
+
+@media (max-width:568px) {
+    .terms .sectionPadding.inner-banner {
+        padding-bottom: 30px !important;
+    }
+}
+
+@media (max-width:767px) {
+    .bann h1 {
+        font-size: 45px !important;
+        line-height: 45px;
+    }
+}
+
+@media (max-width:399px) {
+    .terms .sectionPadding.inner-banner {
+        padding-top: 115px !important;
+        padding-bottom: 30px !important;
+    }
+}
