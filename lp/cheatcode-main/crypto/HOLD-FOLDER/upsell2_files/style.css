@@ -1,0 +1,1838 @@
+/*--------------------------------------------------------------
+    Theme Name: Cryptocurrency Template
+    Theme URL: https://www.ogwebsolutions.com/
+    Author: OG Websolutions Pvt. Ltd.
+    Version:  1.0
+--------------------------------------------------------------*/
+
+
+/*============================================
+	Index
+============================================
+
+# General
+	## Google Font
+	## Preloader Spinner
+	## Back to top
+
+# Header
+#Footer
+
+# Homepage
+	## Banner Section
+    ## Whoever You are Section
+    ## Quality Section
+    ## Video Version Section
+    ## Hnadle Payment Section
+    ## FAQ Section
+    ## Order Form Section
+    ## Oto popup 
+
+# Upsell1 Page
+# Upsell2 Page
+# Thank-You Page
+# Order Cancelled Page
+# Privacy Policy & Term and Conditions page
+
+
+/*--------------------------------------------------------------
+    # General
+--------------------------------------------------------------*/
+
+
+/* ----------------------------------
+    ## Google Font
+----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ----------------------------------
+    ## Typography
+----------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #2c2c2c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #2c2c2c;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #2c2c2c;
+}
+
+label {
+    font-weight: normal;
+}
+
+label.error {
+    color: #f00;
+    padding-left: 12px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.form-control {
+    height: auto;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #aaaaaa;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #d5d5d5;
+    margin-bottom: 20px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+::-webkit-input-placeholder {
+    opacity: 1;
+    color: #aaaaaa;
+}
+
+:-moz-placeholder {
+    opacity: 1;
+    color: #aaaaaa;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+    color: #aaaaaa;
+}
+
+:-ms-input-placeholder {
+    opacity: 1;
+    color: #aaaaaa;
+}
+
+
+/*------ Custom Container ------*/
+
+@media only screen and (max-width: 991.98px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .container {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/*------ Section Spacer ------*/
+
+.sectionPadding {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .sectionPadding {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .sectionPadding {
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .sectionPadding {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+}
+
+
+/*------ Section Title ------*/
+
+.section-title {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-title h2 {
+    font-size: 71px;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+
+.section-title p {
+    font-size: 20px;
+    color: #2c2c2c;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .section-title h2 {
+        font-size: 55px;
+    }
+    .section-title p {
+        font-size: 18px;
+        padding: 10px 0 5px
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .section-title h2 {
+        font-size: 36px;
+    }
+    .section-title h2 br {
+        display: none;
+    }
+    .section-title p br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .section-title p {
+        font-size: 16px;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .section-title h2 {
+        font-size: 26px;
+    }
+}
+
+
+/*------ Font Weight ------*/
+
+.fw-500 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+
+/*------ Custom Text Color ------*/
+
+.text-yellow {
+    color: #ffa800;
+}
+
+.text-red {
+    color: #f61f0c;
+}
+
+
+/*------ Custom Background Color ------*/
+
+.bg-color-white {
+    background-color: #fff;
+}
+
+.bg-color-cream {
+    background-color: #fefcf4;
+}
+
+.bg-color-gray {
+    background-color: #f8f8f8;
+}
+
+
+/*------ Box Shadow ------*/
+
+.box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*------ Button Style ------*/
+
+.btn {
+    background-image: linear-gradient(#fd5405, #f61f0c);
+    color: #ffffff !important;
+    font-size: 32px;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 0.8;
+    padding: 15px 45px;
+    border-radius: 7px;
+    border-bottom: 4px solid #90140c !important;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.btn-sec .btn .text-uppercase{
+    margin-top: 5px;
+}
+.btn-sub {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.btn:hover {
+   opacity: 0.9;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .btn {
+        font-size: 25px;
+        line-height: 1;
+        padding: 15px 40px;
+    }
+    .btn-sub {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .btn {
+        font-size: 22px;
+        margin-top: 30px;
+        padding: 15px 30px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .btn {
+        padding: 10px 22px;
+        font-size: 20px;
+    }
+    .btn-sub {
+        font-size: 14px;
+    }
+    
+}
+
+
+/* ----------------------------------
+    ## Prelaoder
+----------------------------------*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #f6210c;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ----------------------------------
+    ## Back to top button
+----------------------------------*/
+
+.backtotop {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: #f6210c;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: opacity 200ms linear;
+    display: none;
+}
+
+.backtotop::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7px;
+    margin-top: -4px;
+    transform: rotate(-45deg);
+    height: 0px;
+    width: 0px;
+    border-width: 3px 3px 0 0;
+    border-style: solid;
+    padding: 5px;
+    border-color: #ffffff;
+}
+
+.backtotop:hover {
+    opacity: 1;
+    transition: opacity 200ms linear;
+}
+
+
+/*--------------------------------------------------------------
+
+# Header
+
+--------------------------------------------------------------*/
+
+header {
+    padding: 10px 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    background: #fefcf4;
+    box-shadow: none;
+}
+
+header .logo {
+    width: 190px;
+}
+
+header .headerRight img {
+    margin-right: 5px;
+    width: 25px;
+}
+
+header .headerRight a {
+    font-size: 17px;
+    line-height: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    header .logo {
+        width: 175px;
+    }
+    header .headerLeft {
+        text-align: center;
+    }
+    header .headerRight {
+        padding-top: 15px;
+        text-align: center;
+    }
+    header .headerRight img {
+        width: 20px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Footer
+
+--------------------------------------------------------------*/
+
+footer {
+    background-color: #0c1c2e;
+    padding: 40px 0 40px;
+}
+
+footer .logo {
+    max-width: 190px;
+}
+
+footer .footer-top .list-inline-item {
+    line-height: 1;
+}
+
+footer .footer-top .list-inline-item a {
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    display: inline-block;
+}
+
+footer .footer-top .list-inline-item a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-top .list-inline-item:not(:last-child) {
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+footer .footer-bottom .copyright {
+    font-size: 16px;
+    color: #fff;
+}
+
+footer .footer-bottom p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 767px) {
+    footer {
+        padding: 30px 0 30px;
+    }
+    footer .logo {
+        max-width: 175px;
+    }
+    footer .footer-top .list-inline-item a {
+        font-size: 14px;
+    }
+    footer .footer-bottom .copyright {
+        font-size: 14px;
+    }
+    footer .footer-bottom p {
+        font-size: 14px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+
+
+/* ----------------------------------
+    ## Banner Section
+----------------------------------*/
+.bannerSection{
+    margin-top: -65px;
+}
+.pageContentWrapper {
+    margin-top: 65px;
+}
+
+@media only screen and (max-width: 767px) {
+    .pageContentWrapper {
+        margin-top: 63px;
+    }
+}
+
+
+/*---- Left Section ----*/
+
+.bannerSection h1 {
+    font-size: 71px;
+    line-height: 1.1;
+    color: #2a2a2a;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1399.98px) {
+    .bannerSection h1 {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .bannerSection h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .bannerSection h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+    .btn-sec {
+        text-align: center;
+    }
+    .bannerSection h1 br{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .bannerSection h1 {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .bannerSection h1 {
+        font-size: 32px;
+    }
+}
+
+
+/*---- Right Section ----*/
+
+.imageBlock .img-fluid {
+    margin-top: -145px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .right-col {
+        text-align: center;
+    }
+    .imageBlock .img-fluid {
+        margin-top: -44px;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .imageBlock .img-fluid {
+        margin-top: -37px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {}
+
+
+/* -------------------------------------
+    ## Whoever You are Section Start Here
+---------------------------------------*/
+
+.Whoever-section video {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+}
+
+.Whoever-section .right-col {
+    margin-top: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Whoever-content p {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .Whoever-content p {
+        font-size: 18px;
+    }
+    .Whoever-section .right-col {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .Whoever-section .right-col {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .Whoever-section .right-col {
+        margin-top: 25px;
+    }
+    .Whoever-content p {
+        font-size: 16px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Quality Section
+----------------------------------*/
+
+.quality-section .qualityBox {
+    padding: 50px 50px;
+    background-color: #ffffff;
+}
+
+.quality-section .qualityBox p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #676767;
+}
+
+.quality-section .qualityBox h3 {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2a2a2a;
+}
+
+@media only screen and (max-width: 1399.98px) {
+    .quality-section .qualityBox p {
+        font-size: 22px;
+    }
+    .quality-section.qualityBox .qualityheadshot {
+        width: 85px;
+        height: 85px;
+    }
+    .quality-section .qualityBox h3 {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .quality-section .qualityBox {
+        padding: 25px 20px;
+    }
+    .quality-section .qualityBox p {
+        font-size: 19px;
+    }
+    .quality-section .qualityBox .qualityheadshot {
+        width: 80px;
+        height: 80px;
+    }
+    .quality-section .qualityBox h3 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .quality-section .qualityBoxOuter {
+        max-width: 575px;
+        width: 100%;
+    }
+    .quality-section .qualityBox p {
+        font-size: 18px;
+    }
+    .qualitySection .qualityBox .qualityheadshot {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .quality-section .qualityBox p {
+        font-size: 16px;
+    }
+    .quality-section .qualityBox .qualityheadshot {
+        width: 60px;
+        height: 60px;
+    }
+    .quality-section .qualityBox h3 {
+        font-size: 15px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Video Version Section
+----------------------------------*/
+
+.video-version-section .video-poster {
+    text-align: center;
+}
+
+.video-version-section .btn-sec {
+    text-align: center;
+}
+
+.video-version-section .btn {
+    margin-top: 20px;
+}
+
+
+/* ----------------------------------
+    ## Handle Payment Section
+----------------------------------*/
+
+.description-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.description-main h3 {
+    font-size: 22px;
+}
+
+.description-main p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description-list li {
+    position: relative;
+}
+
+.description-list li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 22px;
+    width: 50%;
+    padding: 0 83px;
+}
+
+.description-list li::before {
+    position: absolute;
+    top: 4px;
+    left: 38px;
+    background-repeat: no-repeat;
+    content: url(../icons/red-tick.png);
+}
+
+@media only screen and (max-width: 991.98px) {
+    .description-main h3 {
+        font-size: 20px;
+    }
+    .description-main p {
+        font-size: 17px;
+    }
+    .description-list {
+        margin-top: 25px !important;
+    }
+    .description-list li {
+        width: 100%;
+        padding: 0px 60px;
+    }
+    .description-list li::before {
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .description-list li {
+        padding: 0px 40px;
+    }
+    .description-list li::before {
+        left: 5px;
+    }
+    .description-main h3 {
+        font-size: 18px;
+        ;
+    }
+    .description-main p {
+        font-size: 16px;
+    }
+}
+
+
+/* ----------------------------------
+    ## Trusted Section
+----------------------------------*/
+
+.trusted-section .trustedBoxOuter {
+    margin-top: 15px;
+}
+
+.trusted-section .trustedBox {
+    padding: 23px 50px;
+    background-color: #ffffff;
+}
+
+.trusted-section .trustedBox p {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.trusted-section .trustedBox h3 {
+    font-size: 20px;
+}
+
+.trusted-section .btn-sec {
+    text-align: center;
+    margin-top: 35px;
+}
+.trustedBox .trustedheadshot{
+    border-radius:50%;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .trusted-section .trustedBox {
+        padding: 25px 20px;
+    }
+    .trusted-section .trustedBox .trustedheadshot {
+        width: 80px;
+        height: 80px;
+    }
+    .trusted-section .btn-sec {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .trusted-section .trustedBoxOuter {
+        max-width: 575px;
+        width: 100%;
+    }
+    .trusted-section .trustedBox p {
+        font-size: 18px;
+    }
+    .trusted-section .trustedBox .trustedheadshot {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .trusted-section .trustedBox p {
+        font-size: 16px;
+    }
+    .trusted-section .trustedBox .trustedheadshot {
+        width: 60px;
+        height: 60px;
+    }
+    .trusted-section .trustedBox h3 {
+        font-size: 15px;
+    }
+}
+
+
+/* ## FAQ Section */
+
+.faq .section-title {
+    text-align: center;
+}
+
+.accordion .accordion-section {
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+
+.accordion-section-content {
+    display: none;
+}
+
+.accordion .accordion-section:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.accordion .accordion-section-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2a2a2a;
+    position: relative;
+    margin: 0;
+    display: block;
+    padding: 15px 50px 15px 50px;
+    background: #ffffff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+
+.accordion .accordion-section-title:hover {
+    text-decoration: none;
+}
+
+.accordion .accordion-section-title.active {
+    color: #2a2a2a;
+}
+
+.accordion .accordion-section-title:before {
+    position: absolute;
+    left: 25px;
+    top: 19px;
+    margin-top: 0;
+    content: '';
+    height: 17px;
+    width: 17px;
+    background-image: url(../icons/plus-img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 17px;
+}
+
+.accordion .accordion-section-title.active:before {
+    background-image: url(../icons/cross-img.png);
+    top: 19px;
+}
+
+.faq-sec .accordion-section-content {
+    display: none;
+    padding: 10px 20px 5px;
+}
+
+.faq-sec .accordion-section-content p {
+    font-size: 18px;
+    color: #2c2c2c;
+    line-height: 1.4;
+}
+
+.accordion-section p {
+    background-color: #ffffff;
+    margin-bottom: auto;
+    padding: 0px 50px 22px 49px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+    font-size: 17px;
+    color: #2c2c2c;
+}
+
+.faq a {
+    text-decoration: none;
+}
+
+.accordion-section-title,
+.accordion-section-content {
+    border-left: 5px solid #ff0000;
+    margin-top: -3px;
+}
+
+.accordion {
+    margin-top: 22px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .accordion .accordion-section-title {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .accordion-section p {
+        padding: 0px 50px 22px 50px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .accordion .accordion-section-title {
+        font-size: 16px;
+    }
+    .accordion-section p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+}
+
+
+/* ## Order Form Section */
+
+.order-section .container {
+    max-width: 985px;
+}
+
+.order-form h3 {
+    font-size: 22px;
+    padding: 22px 0 22px 15px;
+    background-color: #f5f5f5;
+    color: #2a2a2a;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 5px solid #ff0000;
+}
+
+.order-form {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px #c9cac5;
+}
+
+.order-img {
+    text-align: center;
+}
+
+.order-right-col h2 {
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.order-right-col h3 {
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.order-right-col .price h3 {
+    font-size: 53px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.order-right-col .price h4 {
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+form {
+    padding: 20px 20px;
+}
+
+input,
+select {
+    height: 50px;
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    outline: none;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.inline {
+    display: inline;
+}
+
+.order-form select {
+    color: #737373;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/drop-icon.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    background-size: 14px !important;
+}
+
+label.error {
+    color: #f00;
+    padding-left: 12px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0 20px;
+    color: #3c3c3c;
+    margin: 0;
+    border-bottom: 2px dotted #bebebe;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order-form .btn {
+    font-size: 28px;
+    padding: 15px 15px;
+
+    width: 100%;
+}
+
+.order-form .btn {
+    margin-top: 10px;
+}
+
+.order-form h4 {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #3c3c3c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.card-image {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width:991px) {
+    .order-section .order-right-col {
+        margin-top: 30px!important;
+    }
+    .top-call ul li {
+        font-size: 17px;
+    }
+    .order-finance .sub-heading h2 {
+        font-size: 36px;
+    }
+    .order-form .btn {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .order-form .btn {
+        font-size: 22px;
+    }
+    .order-finance .sub-heading p {
+        font-size: 18px;
+    }
+    .order-form h3 {
+        font-size: 18px;
+    }
+      
+    .order-form h4 {
+
+        font-size: 14px;
+    }
+    .order-right-col h3 {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .order-form .btn {
+        width: 100%;
+    }
+}
+
+
+/*---------## Oto popup ------*/
+
+.modal-content.sectionPadding {
+    padding-top: 0px;
+}
+
+.modal .modal-body {
+    padding: 0;
+}
+
+.free-consultation .close {
+    position: absolute;
+    right: -12px;
+    top: -17px;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    opacity: 1 !important;
+    font-size: 25px;
+}
+
+.free-consultation .close:hover {
+    opacity: 1;
+}
+
+.pop-up-content {
+    padding: 45px 15px 0px 15px;
+}
+
+.pop-up-content h1 {
+    font-size: 34px;
+}
+
+.pop-up-content h2 {
+    font-size: 30px;
+}
+
+.pop-up-content p {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height:1.5;
+}
+
+.check-out {
+    background-color: #f0f7ff;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px dashed #2c2c2c;
+    padding: 15px;
+}
+
+.form-check {
+    background-color: #deeeff;
+    padding: 10px 15px 12px 28px;
+    margin-bottom: 15px;
+}
+
+.check-out-form {
+    display: inline-block;
+}
+
+.form-check-label {
+    font-size: 18px;
+    color: #0c58a6;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+.otopopupSec .btn {
+    font-size: 28px;
+    padding: 20px 90px;
+}
+.otopopupSec .bottomSec .text-uppercase{
+    margin-top: 7px;
+}
+.otopopupSec form{
+    padding: 0px !important;
+}
+@media only screen and (max-width:991px){
+    .pop-up-content p br{
+        display: none;
+    }
+}
+@media only screen and (max-width:767px){
+    .otopopupSec .btn {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:399px){
+    .otopopupSec .btn{
+        padding: 15px 60px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Upsell1 Page
+--------------------------------------------------------------*/
+
+
+/*---- Upsell Banner Section-----------*/
+
+
+/*------- progress bar ----------*/
+
+.progress {
+    height: 44px;
+    font-size: 20px;
+}
+
+.progress-bar {
+    background-color: #d7660f;
+}
+
+.upsell-title h1 {
+    font-size: 50px;
+}
+
+.upsell-title h2 {
+    font-size: 59px;
+}
+
+
+/*---- Video Tutorial Section-----------*/
+
+.tutorial-section h2 {
+    font-size: 46px;
+}
+
+.tutorial-section p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tutorial-section h4 {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.tutorial-section .video-content p {
+    font-size: 18px;
+}
+
+.tutorial-section .box-shadow {
+    padding: 40px;
+}
+
+.tutorial-section img {
+    width: 100%;
+}
+
+.tutorial-section .upsell-content h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.tutorial-section .price h3 {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.tutorial-section .price h4 {
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    color: #757575;
+    text-align: center;
+    position: relative;
+}
+
+.tutorial-section .price h4::before {
+    content: '';
+    position: absolute;
+    left: 16%;
+    top: -100px;
+    width: 54px;
+    height: 140px;
+    background-image: url(../icons/left-arw.png);
+    background-repeat: no-repeat;
+    background-size: 54px 140px;
+    background-position: left top;
+}
+
+.tutorial-section .price h4::after {
+    content: '';
+    position: absolute;
+    right: 16%;
+    top: -100px;
+    width: 54px;
+    height: 140px;
+    background-image: url(../icons/right-arw.png);
+    background-repeat: no-repeat;
+    background-size: 54px 140px;
+    background-position: left top;
+}
+
+.tutorial-section .btn {
+    margin-top: 10px;
+}
+
+.tutorial-section .btn-sec p {
+    font-size: 15px;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1279px) {
+    .video-img {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .tutorial-section .price h4::before,
+    .tutorial-section .price h4::after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .upsell-title h1 {
+        font-size: 45px;
+    }
+    .upsell-title h2 {
+        font-size: 52px;
+    }
+    .tutorial-section h2 {
+        font-size: 40px;
+    }
+    .tutorial-section h4 {
+        font-size: 18px;
+    }
+    .tutorial-section .video-content p {
+        font-size: 16px;
+    }
+    .tutorial-section .box-shadow {
+        padding: 25px;
+    }
+    .tutorial-section .upsell-content h2 {
+        font-size: 45px;
+    }
+    .tutorial-section .price h3 {
+        font-size: 68px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .progress {
+        font-size: 16px;
+        height: 35px;
+    }
+    .upsell-title h2 {
+        font-size: 35px;
+    }
+    .tutorial-section h2 {
+        font-size: 31px;
+    }
+    .video-num {
+        width: 100%;
+        text-align: center;
+    }
+    .video-content {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .video-img {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .box-shadow {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .tutorial-section .upsell-content h2 {
+        font-size: 33px;
+    }
+    .tutorial-section .box-shadow {
+        padding: 20px;
+    }
+    .tutorial-section .price h4 {
+        font-size: 40px;
+    }
+    .tutorial-section .price h3 {
+        font-size: 52px;
+    }
+    .trusted-section .trustedBoxOuter {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .tutorial-section h4 {
+        font-weight: 600;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Upsell2 Page
+--------------------------------------------------------------*/
+
+.box-listing {
+    list-style-type: none;
+    padding-left: 40px;
+}
+
+.right-container h5 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+.left-container video{
+    max-width: 100%;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+}
+.box-listing li {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-listing li:before {
+    content: url(../icons/red-tick.png);
+    position: absolute;
+    left: -38px;
+    top: 4px;
+}
+
+@media only screen and (max-width: 1279px) {
+    .box-listing li {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .tutorial-section .price h3 {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .right-container {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .right-container h5 {
+        font-size: 18px;
+    }
+    .box-listing li {
+        font-size: 16px;
+    }
+    .tutorial-section .price h3 {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .upsell-title h1 {
+        font-size: 40px;
+    }
+    .upsell-title h2 {
+        font-size: 30px;
+    }
+    .tutorial-section h2 {
+        font-size: 25px;
+    }
+    .tutorial-section p {
+        font-size: 18px;
+    }
+    .tutorial-section .price h3 {
+        font-size: 50px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Thank-you Page
+--------------------------------------------------------------*/
+.pageContentWrapper.thankswrapper{
+    margin-top: 30px !important;
+}
+.thank-you-title h1 {
+    font-size: 65px;
+}
+
+.thank-you-title p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.thankyou-section p {
+    font-size: 20px;
+    line-height: 1.3;
+}
+.thankyou-section .detail{
+    max-width: 88%;
+    margin: 0 auto;
+}
+.thankyou-section .item-single {
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.thankyou-section .poster-img {
+    max-width: 100%;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+}
+
+.thankyou-section .thanks-content p {
+    font-size: 19px;
+    margin-left: 20px
+}
+
+.thankyou-section .full-video {
+    margin-top: 7px;
+}
+@media only screen and (max-width: 1199.98px) {
+    .thankyou-section .detail{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 991.98px) {
+    .thankyou-section .detail{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .thank-you-title h1 {
+        font-size: 55px;
+    }
+    .thank-you-title p {
+        font-size: 18px;
+    }
+    .thankyou-section p {
+        font-size: 17px;
+    }
+    .thankyou-section .thanks-content p {
+        font-size: 16px;
+    }
+    .thankyou-section .poster-img {
+        max-width: 85%
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .thank-you-title h1 {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .thank-you-title h1 {
+        font-size: 32px;
+    }
+    .thank-you-title p {
+        font-size: 16px;
+    }
+    .thankyou-section .detail {
+        max-width: 82%;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Privacy Policy & Terms and Conditions page
+--------------------------------------------------------------*/
+.pageContentWrapper.privacywrapper{
+    margin-top: 0px !important;
+}
+.privacypolicyterms h2 {
+    font-size: 32px;
+}
+
+.privacypolicyterms h3 {
+    font-size: 24px;
+}
+
+.privacypolicyterms h4 {
+    font-size: 22px;
+}
+
+.privacypolicyterms p {
+    font-size: 18px;
+}
+
+.privacypolicyterms p a {
+    color: #1577da;
+}
+
+.privacypolicyterms li {
+    font-size: 18px;
+}
+
+.privacypolicyterms .highlight {
+    font-weight: 500;
+}
+
+.privacypolicyterms p,
+.privacypolicyterms li,
+.privacypolicyterms h2,
+.privacypolicyterms h3,
+.privacypolicyterms h4 {
+    font-weight: 500;
+}
+
+.privacypolicyterms h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.termcond_privacypilocy {
+    padding-top: 60px;
+}
+
+.termcond_privacypilocy .section-title {
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 991.99px) {
+    .termcond_privacypilocy {
+        padding-top: 65px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .termcond_privacypilocy .section-title {
+        margin-top: -20px;
+    }
+    .privacypolicyterms h2 {
+        font-size: 28px;
+        margin-top: -20px;
+    }
+    .privacypolicyterms h3 {
+        font-size: 22px;
+    }
+    .privacypolicyterms h4 {
+        font-size: 20px;
+    }
+    .privacypolicyterms p,
+    .privacypolicyterms li {
+        font-size: 16px;
+    }
+}
