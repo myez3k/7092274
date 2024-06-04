@@ -1,0 +1,1820 @@
+/*--------------------------------------------------------------
+
+    Theme Name: Entrepreneurs Template
+
+    Theme URL: https://www.ogwebsolutions.com/
+
+    Author: OG Websolutions Pvt. Ltd.
+
+    Version:  1.1
+
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+
+# General
+
+--------------------------------------------------------------*/
+
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Typography */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #2a2a2a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #2a2a2a;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #2a2a2a;
+    margin-bottom: 30px;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-weight: normal;
+}
+
+label.error {
+    color: #f00;
+    padding-left: 12px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.form-control {
+    height: auto;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #737373;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    border: 1px solid #b6b6b6;
+    margin-bottom: 20px;
+}
+
+
+/* .form-control.error {
+
+	border-color: #f00;
+
+} */
+
+::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    opacity: 1;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.form-control.error {
+    border-color: red;
+}
+
+::-webkit-input-placeholder {
+    color: #8c8c8c;
+}
+
+::-moz-placeholder {
+    color: #8c8c8c;
+}
+
+:-ms-input-placeholder {
+    color: #8c8c8c;
+}
+
+:-moz-placeholder {
+    color: #8c8c8c;
+}
+
+
+/* Prelaoder */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #1577da;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Back to top button */
+
+.backtotop {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: #1577da;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: opacity 200ms linear;
+    display: none;
+}
+
+.backtotop::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7px;
+    margin-top: -4px;
+    transform: rotate(-45deg);
+    height: 0px;
+    width: 0px;
+    border-width: 3px 3px 0 0;
+    border-style: solid;
+    padding: 5px;
+    border-color: #ffffff;
+}
+
+.backtotop:hover {
+    opacity: 1;
+    transition: opacity 200ms linear;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/* Custom Text Color */
+
+.text-yellow {
+    color: #efc42c;
+}
+
+.text-blue {
+    color: #1577da;
+}
+
+.text-red {
+    color: #ff0000;
+}
+
+
+/* Custom Background Color */
+
+.bg-color-white {
+    background-color: #fff;
+}
+
+.bg-color-blue {
+    background-color: rgb(227, 254, 255);
+}
+
+
+/* Custom Button Style */
+
+.btn {
+    background: rgb(219, 75, 3);
+    background: -moz-linear-gradient(0deg, rgba(219, 75, 3, 1) 0%, rgba(139, 0, 0, 1) 100%) !important;
+    background: -webkit-linear-gradient(0deg, rgba(219, 75, 3, 1) 0%, rgba(139, 0, 0, 1) 100%) !important;
+    background: linear-gradient(0deg, rgba(219, 75, 3, 1) 0%, rgba(139, 0, 0, 1) 100%) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#db4b03', endColorstr='#8b0000', GradientType=1) !important;
+    font-size: 30px;
+    line-height: 1.1;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    box-shadow: inset 0 0px 0px 0 rgb(255 255 255 / 22%), 0 233px 233px 0 rgb(255 255 255 / 12%) inset;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/* Section Spacer */
+
+.sectionPadding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .bannerSection.sectionPadding,
+    .sectionPadding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .bannerSection.sectionPadding,
+    .sectionPadding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Header
+
+--------------------------------------------------------------*/
+
+header {
+    padding: 10px 0;
+    background-color: #001a2b;
+    border-bottom: 3px solid #1577da;
+}
+
+header .logo {
+    width: 190px;
+}
+
+header .headerRight img {
+    margin-right: 5px;
+    width: 25px;
+}
+
+header .headerRight a {
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    header .logo {
+        width: 175px;
+    }
+    .headerLeft {
+        text-align: center;
+    }
+    .headerRight {
+        padding-top: 15px;
+        text-align: center;
+    }
+    header .headerRight img {
+        width: 20px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Footer
+
+--------------------------------------------------------------*/
+
+footer {
+    background-color: #001a2b;
+    padding: 60px 0 60px;
+}
+
+footer .logo {
+    max-width: 190px;
+}
+
+footer .footer-top .list-inline-item {
+    line-height: 1;
+}
+
+footer .footer-top .list-inline-item a {
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    display: inline-block;
+}
+
+footer .footer-top .list-inline-item a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-top .list-inline-item:not(:last-child) {
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+footer .footer-bottom .copyright {
+    font-size: 16px;
+    color: #fff;
+}
+
+footer .footer-bottom p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 1200px) {
+    footer {
+        background-color: #001a2b;
+        padding: 50px 0 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer {
+        padding: 40px 0 40px;
+    }
+    footer .logo {
+        max-width: 175px;
+    }
+    footer .footer-top .list-inline-item a {
+        font-size: 14px;
+    }
+    footer .footer-bottom .copyright {
+        font-size: 14px;
+    }
+    footer .footer-bottom p {
+        font-size: 14px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Regitration Popup (Modal)
+
+--------------------------------------------------------------*/
+
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.regitrationPopup .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    opacity: 1 !important;
+}
+
+.regitrationPopup .modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.regitrationPopup .modal-body {
+    padding: 30px 50px 45px;
+}
+
+.regitrationPopup .content h2 {
+    font-size: 42px;
+}
+
+.regitrationPopup .content p {
+    color: #787878;
+    font-size: 20px;
+}
+
+.regitrationPopup form p {
+    color: #787878;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+    .modal-lg {
+        max-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .regitrationPopup .modal-body {
+        padding: 15px 30px 30px;
+    }
+    .regitrationPopup .content p {
+        font-size: 18px;
+    }
+    .regitrationPopup .content h2 {
+        font-size: 32px;
+    }
+    .regitrationPopup .content p br {
+        display: none;
+    }
+    .regitrationPopup form p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .modal-dialog {
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    .regitrationPopup .modal-body {
+        padding: 15px;
+    }
+    .regitrationPopup .content h2 {
+        font-size: 23px;
+    }
+    .regitrationPopup .content p {
+        font-size: 15px;
+    }
+    .regitrationPopup .form-control {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    .regitrationPopup .btn {
+        font-size: 16px;
+    }
+    .regitrationPopup form p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .regitrationPopup .modal-body {
+        padding: 10px;
+    }
+    .regitrationPopup .content h2 {
+        font-size: 20px;
+    }
+    .regitrationPopup .content p {
+        font-size: 14px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Home Page
+
+--------------------------------------------------------------*/
+
+
+/* ------------ Banner Section ------------ */
+
+.bannerSection {
+    padding: 70px 0;
+    background: url(../images/main-banner-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bannerSection h2 {
+    font-size: 41px;
+}
+
+.bannerSection h1 {
+    font-size: 72px;
+    margin: 5px 0 15px;
+}
+
+.bannerSection video {
+    border: 3px solid #1577da;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.timer-head {
+    background-color: #1577da;
+    border-bottom: 2px solid #4df2ec;
+    padding: 20px;
+}
+
+.timer-head h2 {
+    font-size: 30px;
+}
+
+.timer-contents {
+    padding: 30px 20px;
+    background-color: #0b1623;
+}
+
+.timer-contents h3 {
+    font-size: 26px;
+}
+
+.timer-contents h4 {
+    font-size: 17px;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.timer-contents h4::after {
+    position: absolute;
+    content: "";
+    background: #efc42c;
+    height: 5px;
+    width: 66px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -33px;
+}
+
+.timer-contents img {
+    width: 100%;
+}
+
+.timer {
+    padding: 10px 40px 10px 40px;
+}
+
+.timer>div {
+    text-align: center;
+}
+
+.timer span {
+    font-size: 34px;
+    color: #fff;
+}
+
+.timer span.seprator {
+    line-height: 1;
+    margin-top: -20px;
+}
+
+.timer .smalltext {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+}
+
+.timer-contents .btn {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .bannerSection h1 {
+        font-size: 55px;
+    }
+    .bannerSection h2 {
+        font-size: 34px;
+    }
+    .timer-head {
+        padding: 15px 20px;
+    }
+    .timer-head h2 {
+        font-size: 22px;
+    }
+    .timer-contents h3 {
+        font-size: 22px;
+    }
+    .timer-contents h4 {
+        font-size: 15px;
+    }
+    .timer-contents {
+        font-size: 15px;
+    }
+    .timer span {
+        font-size: 26px;
+        color: #fff;
+    }
+    .btn {
+        font-size: 22px;
+    }
+    .timer-contents {
+        padding: 15px 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .bannerSection h1 {
+        font-size: 45px;
+    }
+    .bannerSection h2 {
+        font-size: 28px;
+    }
+    .btn {
+        font-size: 20px;
+    }
+    .timer-mainSection {
+        max-width: 360px;
+        width: 100%;
+        margin: 30px auto 0 auto;
+    }
+    .timer-head h2 {
+        font-size: 20px;
+    }
+    .timer-contents h3 {
+        font-size: 20px;
+    }
+    .timer span {
+        font-size: 24px;
+    }
+    .timer span.seprator {
+        margin-top: -15px;
+    }
+    .timer .smalltext {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .bannerSection h1 {
+        font-size: 38px;
+    }
+    .bannerSection h2 {
+        font-size: 22px;
+    }
+}
+
+
+/* ------------ About Section ------------ */
+
+.section-title h2 {
+    font-size: 70px;
+}
+
+.section-title p {
+    font-size: 27px;
+    padding: 20px 0 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-title h2 {
+        font-size: 50px;
+    }
+    .section-title img.bluborderImg {
+        max-width: 50%;
+    }
+    .section-title p {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .section-title h2 {
+        font-size: 45px;
+    }
+    .section-title p {
+        font-size: 21px;
+    }
+    .section-title p br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-title p {
+        font-size: 17px;
+    }
+    .section-title h2 {
+        font-size: 34px;
+    }
+    .section-title h2 br {
+        display: none;
+    }
+    .section-title p {
+        padding: 10px 0 25px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+
+.aboutSection {}
+
+.aboutSection .abt-left p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.aboutSection .container.bg-color-blue {
+    padding: 50px 30px;
+    margin-top: 135px;
+    position: relative;
+}
+
+.aboutSection .container.bg-color-blue::after {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 73px;
+    top: -100px;
+    right: 0;
+    background-image: url(../icons/yellowArrow-left.png);
+}
+
+.aboutSection .container.bg-color-blue::before {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 73px;
+    top: -100px;
+    left: 0;
+    background-image: url(../icons/yellowArrow-right.png);
+}
+
+.aboutSection .container.bg-color-blue h3 {
+    font-size: 58px;
+    background-image: url(../icons/yellow-title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+}
+
+.aboutSection .container.bg-color-blue li {
+    font-size: 18px;
+    line-height: 1.5;
+    background-image: url(../icons/rightArrow-red.png);
+    background-repeat: no-repeat;
+    background-position: left 25px;
+    background-size: 26px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.aboutSection .container.bg-color-blue li:last-child {
+    padding-bottom: 0;
+}
+
+.aboutSection .about-btnarea h3 {
+    font-size: 36px;
+    margin: 45px auto 15px;
+}
+
+.about-btnarea .btn {
+    max-width: 485px;
+    width: 100%;
+    position: relative;
+}
+
+.about-btnarea .btn::after {
+    position: absolute;
+    content: "";
+    height: 61px;
+    width: 56px;
+    top: -20px;
+    right: -80px;
+    background-image: url(../icons/redArrow-left.png);
+}
+
+.about-btnarea .btn::before {
+    position: absolute;
+    content: "";
+    height: 61px;
+    width: 56px;
+    top: -20px;
+    left: -80px;
+    background-image: url(../icons/redArrow-right.png);
+}
+
+.btn-sub-text {
+    font-size: 16px;
+    text-transform: none !important;
+    display: block;
+    font-weight: 400 !important;
+    opacity: .7;
+    padding-top: 4px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .aboutSection .abt-left p {
+        font-size: 19px;
+    }
+    .aboutSection .container.bg-color-blue::before {
+        left: 20px;
+    }
+    .aboutSection .container.bg-color-blue::after {
+        right: 20px;
+    }
+    .aboutSection .container.bg-color-blue h3 {
+        font-size: 40px;
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .aboutSection .abt-left p {
+        font-size: 18px;
+    }
+    .aboutSection .abt-right {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .aboutSection .container.bg-color-blue {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .aboutSection .container.bg-color-blue::before,
+    .aboutSection .container.bg-color-blue::after,
+    .about-btnarea .btn::after,
+    .about-btnarea .btn::before {
+        display: none;
+    }
+    .aboutSection .container.bg-color-blue {
+        margin-top: 45px;
+    }
+    .aboutSection .abt-left p {
+        font-size: 16px;
+    }
+    .aboutSection .container.bg-color-blue h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .aboutSection .container.bg-color-blue {
+        padding: 45px 15px;
+    }
+    .aboutSection .container.bg-color-blue li {
+        font-size: 16px;
+    }
+    .aboutSection .about-btnarea h3 {
+        font-size: 30px;
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .aboutSection .container.bg-color-blue h3 {
+        font-size: 22px;
+    }
+    .aboutSection .about-btnarea h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* ------------ About Host/Speaker Section ------------ */
+
+.abouthostSection {
+    background: url(../images/host-section-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abouthostSection .text-area h2 {
+    font-size: 74px;
+}
+
+.abouthostSection .text-area h3 {
+    font-size: 74px;
+    font-family: 'Dancing Script', cursive;
+    color: #ffeb11 !important;
+}
+
+.abouthostSection .text-area p {
+    font-size: 20px;
+}
+
+.abouthostSection .img-area img {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .abouthostSection .text-area h2 {
+        font-size: 55px;
+    }
+    .abouthostSection .text-area h3 {
+        font-size: 65px;
+    }
+    .abouthostSection .text-area p {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .abouthostSection .img-area {
+        position: relative;
+        text-align: center;
+    }
+    .abouthostSection .img-area img {
+        position: relative;
+        bottom: -50px;
+        z-index: -1;
+    }
+    .abouthostSection .text-area h2 {
+        font-size: 45px;
+    }
+    .abouthostSection .text-area h3 {
+        font-size: 55px;
+    }
+    .abouthostSection .text-area p {
+        font-size: 18px;
+    }
+    .abouthostSection .text-area {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .abouthostSection .img-area img {
+        bottom: -40px;
+        max-width: 360px;
+        width: 100%;
+    }
+    .abouthostSection .text-area h2 {
+        font-size: 34px;
+    }
+    .abouthostSection .text-area h3 {
+        font-size: 45px;
+    }
+    .abouthostSection .text-area p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .abouthostSection .text-area h2 {
+        font-size: 28px;
+    }
+    .abouthostSection .text-area h3 {
+        font-size: 40px;
+    }
+}
+
+
+/* ------------ Item You Get Section ------------ */
+
+.youwillgetSection .itemyouGet {
+    box-shadow: 0px 0px 10px #ccc;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.youwillgetSection .itemyouGet h3 {
+    font-size: 28px;
+}
+
+.youwillgetSection .itemyouGet h4 {
+    color: #cf3f03;
+    font-size: 21px;
+}
+
+.youwillgetSection .itemyouGet p {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .youwillgetSection .itemyouGet h3 {
+        font-size: 25px;
+    }
+    .youwillgetSection .itemyouGet p {
+        font-size: 17px;
+    }
+    .youwillgetSection .itemyouGet h4 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .youwillgetSection .itemyouGet {
+        padding: 30px 20px;
+    }
+    .youwillgetSection .itemyouGet img {
+        max-width: 120px;
+    }
+    .youwillgetSection .itemyouGet h3 {
+        font-size: 22px;
+    }
+    .youwillgetSection .itemyouGet p {
+        font-size: 16px;
+    }
+    .youwillgetSection .itemyouGet h4 {
+        font-size: 17px;
+    }
+}
+
+
+/* ------------ Achiever Saying Section ------------ */
+
+.achieverSection .section-title h2 {
+    font-size: 58px;
+    background-image: url(../icons/yellow-title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 15px 15px;
+    margin-bottom: 60px;
+}
+
+.achieverSection .achieverBox {
+    padding: 30px 15px;
+    background-color: #fff;
+    border: 2px solid #9a9a9a;
+    border-radius: 10px;
+}
+
+.achieverSection .achieverBox img {
+    max-width: 160px;
+    border-radius: 100%;
+}
+
+.achieverSection .achieverBox h3 {
+    font-size: 25px;
+}
+
+.achieverSection .achieverBox p {
+    font-size: 23px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .achieverSection .section-title h2 {
+        font-size: 40px;
+        padding: 10px 10px;
+        margin-bottom: 45px;
+    }
+    .achieverSection .achieverBox p {
+        font-size: 20px;
+    }
+    .achieverSection .achieverBox h3 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .achieverSection .achieverBox p {
+        font-size: 18px;
+    }
+    .achieverSection .achieverBox h3 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .achieverSection .section-title h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .achieverSection .achieverBox p {
+        font-size: 16px;
+    }
+    .achieverSection .achieverBox h3 {
+        font-size: 20px;
+    }
+    .achieverSection .achieverBox img {
+        max-width: 120px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .achieverSection .section-title h2 {
+        font-size: 22px;
+    }
+}
+
+
+/* ------------ Why Waiting Section ------------ */
+
+.whywaitingtSection {
+    background: url(../images/whywaitingSec-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    /* padding-top: 30px; */
+}
+
+.whywaitingtSection .text-area h2 {
+    font-size: 74px;
+}
+
+.whywaitingtSection .text-area p {
+    font-size: 27px;
+    line-height: 1.5;
+}
+
+.whywaitingtSection .img-area img {
+    /* position: relative;
+	bottom: -60px;
+	z-index: -1; */
+}
+
+.whywaitingtSection .text-area .btn {
+    max-width: 485px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .whywaitingtSection .text-area h2 {
+        font-size: 55px;
+    }
+    .whywaitingtSection .text-area p {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .whywaitingtSection .text-area {
+        text-align: center;
+    }
+    .whywaitingtSection .text-area h2 {
+        font-size: 45px;
+    }
+    .whywaitingtSection .text-area p {
+        font-size: 21px;
+    }
+    .whywaitingtSection .img-area {
+        text-align: center;
+        margin-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .whywaitingtSection .text-area h2 {
+        font-size: 35px;
+    }
+    .whywaitingtSection .text-area p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .whywaitingtSection .text-area h2 {
+        font-size: 28px;
+    }
+    .whywaitingtSection .text-area p {
+        font-size: 16px;
+    }
+}
+
+/*--------------------------------------------------------------
+
+# Webinar Confirmation Page
+
+--------------------------------------------------------------*/
+
+.webcnfBanner .timer {
+    max-width: 305px;
+    margin: 15px auto 20px;
+}
+
+.webcnfBanner p {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.webinarConfirmSec .list-unstyled li {
+    font-size: 18px;
+    line-height: 1.5;
+    background-image: url(../icons/rightArrow-red.png);
+    background-repeat: no-repeat;
+    background-position: left 25px;
+    background-size: 26px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.webinarConfirmSec .list-unstyled li:last-child {
+    padding-bottom: 0;
+}
+
+.webinarConfirmSec .btn {
+    max-width: 415px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    .webcnfBanner p {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .webinarConfirmSec .list-unstyled li {
+        font-size: 16px;
+    }
+    .webcnfBanner p {
+        font-size: 17px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Introduction-1 Page
+
+--------------------------------------------------------------*/
+
+.introSection {
+    background: #fff;
+}
+
+.introSection p {
+    font-size: 22px;
+}
+
+.introSection .btn {
+    max-width: 465px;
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+
+# Broadcast Room Page
+
+--------------------------------------------------------------*/
+
+.broadCastBanner h1 {
+    font-size: 24px;
+    margin: 25px auto 15px;
+}
+
+.broadCastBanner p {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.broadCastBanner .timer {
+    max-width: 305px;
+    margin: 15px auto 0;
+}
+
+.broadCastSec h3.total-val {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.broadCastSec h3.total-val span.pay-val {
+    font-size: 40px;
+}
+
+.broadCastSec .txt-left p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.broadCastSec .btn {
+    max-width: 415px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .broadCastSec h3.total-val {
+        font-size: 32px;
+    }
+    .broadCastSec h3.total-val span.pay-val {
+        font-size: 36px;
+    }
+    .broadCastSec .txt-left p {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .broadCastSec .txt-left p {
+        font-size: 18px;
+    }
+    .broadCastSec h3.total-val {
+        text-align: center;
+    }
+    .broadCastSec .btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .broadCastSec figure {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .broadCastBanner p {
+        font-size: 18px;
+    }
+    .broadCastSec .txt-left p {
+        font-size: 16px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Webinar Replay Page
+
+--------------------------------------------------------------*/
+
+.webinarReplayBanner h1 {
+    margin: 0 auto;
+    padding: 0;
+    line-height: 0;
+}
+
+.headerRight .timer {
+    padding: 0;
+}
+
+.headerRight .timer span.seprator {
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .headerRight .timer {
+        max-width: 200px;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Order Page
+
+--------------------------------------------------------------*/
+
+
+/* Order Banner */
+
+.orderBannerSec p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+/* Order left section */
+
+.orderleftSec .blueBoxSec {
+    padding: 40px 40px;
+    margin: 40px 0 0;
+}
+
+.orderleftSec .blueBoxSec h3 {
+    font-size: 35px;
+    background-image: url(../icons/yellow-title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 15px 15px;
+}
+
+.orderleftSec .blueBoxSec li {
+    font-size: 18px;
+    line-height: 1.5;
+    background-image: url(../icons/rightArrow-red.png);
+    background-repeat: no-repeat;
+    background-position: left 25px;
+    background-size: 26px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.orderleftSec .blueBoxSec li:last-child {
+    padding-bottom: 0;
+}
+
+.orderleftSec h2 {
+    font-size: 35px;
+    padding: 10px 20px 0;
+}
+
+.orderleftSec h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.orderleftSec h4 {
+    font-size: 38px;
+}
+
+
+/* Order right Section */
+
+.orderrightSec .form-title {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0 20px;
+    margin: 0 0 30px;
+    border-bottom: 2px dotted #bebebe;
+}
+
+.orderformSection .orderrightSec {
+    padding: 30px;
+    border: 1px solid #d9d9d9;
+}
+
+.orderrightSec .yourProductlist {
+    background: #fbfbfb;
+    padding: 15px;
+    margin-bottom: 40px;
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+}
+
+.orderrightSec .yourProductlist ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.orderrightSec .yourProductlist li {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.orderrightSec .yourProductlist li:not(:last-child) {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+}
+
+.orderrightSec .yourProductlist li:first-child,
+.orderrightSec .yourProductlist li:last-child {
+    color: #2a2a2a;
+    font-size: 16px;
+}
+
+.orderrightSec .yourProductlist li .pullLeft {
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .orderBannerSec p {
+        font-size: 22px;
+    }
+    .orderleftSec h2 {
+        font-size: 32px;
+        padding: 0;
+    }
+    .orderleftSec .blueBoxSec h3 {
+        font-size: 28px;
+    }
+    .orderleftSec .blueBoxSec {
+        padding: 30px 30px;
+        margin: 25px 0 0;
+    }
+    .orderleftSec h4 {
+        font-size: 35px;
+    }
+    .orderleftSec h3 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .orderBannerSec p {
+        font-size: 19px;
+    }
+    .orderleftSec figure {
+        text-align: center;
+    }
+    .orderleftSec h2 {
+        max-width: 480px;
+        width: 100%;
+        margin: auto;
+    }
+    .orderformSection .orderrightSec {
+        margin-top: 45px;
+    }
+    .orderrightSec .form-title {
+        padding: 10px 0 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .orderBannerSec p {
+        font-size: 18px;
+    }
+    .orderBannerSec p br {
+        display: none;
+    }
+    .orderleftSec .blueBoxSec li {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .orderleftSec h2 {
+        font-size: 26px;
+    }
+    .orderleftSec h3 {
+        font-size: 22px;
+    }
+    .orderleftSec h4 {
+        font-size: 28px;
+    }
+    .orderleftSec .blueBoxSec {
+        padding: 15px 15px;
+    }
+    .orderleftSec .blueBoxSec h3 {
+        font-size: 19px;
+    }
+    .orderleftSec .blueBoxSec li {
+        font-size: 16px;
+    }
+    .orderformSection .orderrightSec {
+        padding: 15px 10px 20px;
+    }
+    .form-control {
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+    .orderrightSec .form-title {
+        font-size: 17px;
+    }
+    .orderrightSec .yourProductlist {
+        padding: 15px 10px;
+    }
+    .orderrightSec .yourProductlist li {
+        font-size: 13px;
+    }
+    .orderrightSec .yourProductlist li:first-child,
+    .orderrightSec .yourProductlist li:last-child {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .orderleftSec h2 {
+        font-size: 21px;
+    }
+    .orderleftSec h3 {
+        font-size: 20px;
+    }
+    .orderleftSec h4 {
+        font-size: 24px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Order Confirmation/Thak you page
+
+--------------------------------------------------------------*/
+
+
+/* .thankyouSec .txtArea{
+
+    padding: 25px 35px 0 35px;
+
+} */
+
+
+/* Banner Section */
+
+.thankyouBanner h1 {
+    margin: 0 auto;
+}
+
+.thankyouBanner h3 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.thankyouBanner .timer {
+    max-width: 305px;
+    margin: 15px auto 0;
+}
+
+
+/* Content Section */
+
+.thankyouSec .txtArea p,
+.thankyouSec .txtArea li {
+    font-size: 18px;
+}
+
+.thankyouSec .txtArea h3 {
+    font-size: 20px;
+}
+
+.thankyouSec .txtArea h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1200px) {
+    .thankyouBanner h3 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .thankyouBanner h3 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .thankyouSec .txtArea p,
+    .thankyouSec .txtArea li {
+        font-size: 17px;
+    }
+    .thankyouSec .txtArea h3,
+    .thankyouSec .txtArea h4 {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .thankyouBanner h3 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .thankyouSec .txtArea p,
+    .thankyouSec .txtArea li {
+        font-size: 16px;
+    }
+    .thankyouSec .txtArea h3,
+    .thankyouSec .txtArea h4 {
+        font-size: 18px;
+    }
+    .facebookCover img {
+        max-width: 220px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .thankyouBanner h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+
+# Privacy Policy & Term and Conditions page
+
+--------------------------------------------------------------*/
+
+.privacypolicyterms h2 {
+    font-size: 32px;
+}
+
+.privacypolicyterms h3 {
+    font-size: 24px;
+}
+
+.privacypolicyterms h4 {
+    font-size: 22px;
+}
+
+.privacypolicyterms p {
+    font-size: 18px;
+}
+
+.privacypolicyterms p a {
+    color: #1577da;
+}
+
+.privacypolicyterms ul {}
+
+.privacypolicyterms li {
+    font-size: 18px;
+}
+
+.privacypolicyterms .highlight {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+    .privacypolicyterms h2 {
+        font-size: 28px;
+    }
+    .privacypolicyterms h3 {
+        font-size: 22px;
+    }
+    .privacypolicyterms h4 {
+        font-size: 20px;
+    }
+    .privacypolicyterms p,
+    .privacypolicyterms li {
+        font-size: 16px;
+    }
+}
