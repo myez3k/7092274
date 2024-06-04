@@ -1,0 +1,276 @@
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+<style>
+
+  
+/* Mixins */
+
+$small-breakpoint: 640px;
+$medium-breakpoint: 768px;
+$large-breakpoint: 1024px;
+$xlarge-breakpoint: 1600px;
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $small-breakpoint) { @content; }
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $medium-breakpoint) { @content; }
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $large-breakpoint) { @content; }
+  }
+  @else if $canvas == XL {
+   @media only screen and (min-width: $xlarge-breakpoint) { @content; }
+  }
+}
+
+@mixin baseline($gridvalue) {
+  background: linear-gradient(#FFCDD2 1px, transparent 1px);
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: 100% $gridvalue + px;
+}
+
+/* Styling */
+
+body {
+	font-family: 'PT Serif', sans-serif;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.87);
+	// Remove comment below to see the basegrid alignment
+	// @include baseline(8);
+}
+
+h1 {
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 72px;
+	margin: 1px 0 0;
+}
+
+h2 {
+	font-weight:400;
+	font-size: 24px;
+	line-height:40px;
+	margin:25px 0 0;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+p > em {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	text-transform:uppercase;
+}
+
+.post {
+	padding: 24px;
+}
+
+.entry-header {
+	text-align:center;
+	@include MQ(S) {
+		max-width: 640px;
+		margin:0 auto;
+	}
+	@include MQ(M) {
+		max-width: 768px;
+	}
+	@include MQ(L) {
+		max-width: 1024px;
+	}
+}
+
+.entry-meta {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size:14px;
+	margin-top: 18px;
+	margin-bottom: 32px;
+}
+
+.entry-content {
+	width: 90%;
+	margin: 0 auto;
+	tab-size: 8;
+	@include MQ(M) {
+		width: 100%;
+		max-width: 768px;
+		column-count: 2;
+		column-gap: 42px;
+	  page-break-inside: avoid;
+		break-inside: avoid;
+	}
+	@include MQ(L) {
+		max-width: 1024px;
+		column-count: 3;
+		column-gap: 42px;
+	  page-break-inside: avoid;
+		break-inside: avoid;
+	}
+}
+
+.entry-content p {
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+footer {
+	margin-top: 39px;
+	color: #757575;
+	max-width: 90%;
+	text-align:center;
+	@include MQ(S) {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 600px;
+	}
+}
+</style>
+
+<style>
+/* css button STYLES */
+
+/* CSS */
+.button-17 {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.button-17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.button-17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+  
+</style>
+
+  
+  
+</head>
+
+
+
+
+
+<body>
+
+<article class="post hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Vågtämjaren</h1>
+		<h2 class="entry-subtitle">Under sju veckor paddlade Julie Jacobson över tusen kilometer längs Norges kust. Som enda sällskap hade on sälar, lunnefåglar - och Nutella …</h2>
+		<p class="entry-meta">
+			<strong>Text</strong> Jannie Aquilonius 	&nbsp;
+			<strong>Foto</strong> Julie Jacobson & Karin Åmossa
+		</p>
+	</header>
+	<main class="entry-content">
+		<p><em>Hon hade trott</em> att ensamheten skulle vara jobbigast. Men Julie Jacboson känner sig inte ensam i sin kajak ute på havet.I stället är det vädret som överraskar och blir den största utmaningen, trots att hon noga kollar prognoserna och förhör sig om läget med lokalbefolkningen. Hon paddlar på nätterna efter det är lugnare då. En natt söder om Tromsö ligger havet spegelblankt. Julie är på sitt tokiga humör där hon bara skrattar och fotograferar för allt är så vackert. Så plötsligt drar starka vindar och vågor in, som från ingenstans. <br>
+&emsp;— Jag hamnar lite i chock och kände "Wow, var kom det ifrån?" Jag kämpade för att ta mig till ett säkert område och pratade stundvid med mig själv, sa att "You got this!", säger Julie som kommer från North Caroline i USA och har norska förfäder.<br>
+&emsp;Julie gjorde kajakturen som en del av utbildningen Tierra Adventure Academy, där deltagarna under 2015 fick planera och genomföra ett eget äventyr.<br>
+&emsp;Resan startar i Trondheim och hon paddlar de tre första veckorna tillsammans med sin pojkvän. Sedan fortsätter hon fyra veckor till på egen hand. Julie lär sig snart att handskas med tidvattenströmmar och bedöma vilka väderförhållanden hon klarar av. Hon inser att panik inte hjälper, det är bättre att fokusera på att lära sig hantera havet. Hon fascineras av färgglada moln när solen går ner och njuter av djurlivet med tumlare, sälar och favoritdjuret lunnefåglar.</p>
+<p><strong>Det sägs att du levde på Nutella och bacon, var det så?</strong><br>
+			— Jag åt väldigt mycket Nuetalla och bacon, men inte bara. Jag fiskade mycket, men blev lite trött på det och då åt jag mer korv och bacon. Jag blev nog gladast av bacon och choklad. Det är lyxigt med kajaken, du behöver inte tänka så mycket på vikt.</p>
+		<p><strong>Äventyret var även att sätt att fira fem år i Skandinavien, hur firade du?</strong><br>
+			— Min plan var att drick champagne och äta tårta, men jag var trött efter paddling och klättring så det blev fisksoppa och Nutella istället. Men det var en fin dag med en vacker solnedgång. Vädret hjälpte mig att fira.
+			</p>
+<p>
+  <br><br><center>
+<!-- HTML !-->
+  <a href="https://sentry.io/answers/">
+<button class="button-17" role="button">Learn More</button></a>
+<br><br></center>
+</p>
+    
+		<p><strong>Skulle du göra om ditt äventyr?</strong><br>
+			— Ja, absolut. När jag kom fram till målet, Tromsö, ville jag bara fortsätta. Jag trodde att jag aldrig skulle vilja padla igen efter det här, men det blev tvärtom och nu vill jag göra en ännu längre resa.</p>
+	</main>
+
+
+  <!-- Hey there! disclimaer for links  -->
+ <!-- -->
+  <div style="border:1px solid black; padding: 8px; font-size: 14px;">
+<b>Hey there!</b><em> Some links on this page are affiliate links which means that, if you choose to make a purchase, I may earn a small commission at no extra cost to you. I greatly appreciate your support!</em>
+</div>
+<br>
+<!--  disclimaer for links  -->	
+
+
+
+	
+	<footer>
+		<p>Fonts used are Playfair Display, PT Serif and Roboto Condensed.</p>
+		<p>The article was published in 365 by Naturkompaniet and they hold the copyrights.</p>
+	</footer>
+</article>
+</body>
+  
+
+
