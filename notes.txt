@@ -1,11 +1,42 @@
 
 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<style>
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+
+
  </p>
  <h3 class="fw-bold mb-3">The Type of Data You Will Collect</h3>
                         <p class="lh-base">This ranges from emails, physical and IP addresses, credit card details,
                             phone numbers or tracking locations. CalOPPA goes a step further to mandate that commercial
                             or online websites collecting information on California residents
                             must categorically list the type of personal information collected.</p>
+
+
+
+======================
+
 
 
 <h3 class="fw-bold mb-3">
@@ -37,9 +68,24 @@ QUESTIONS/COMMENTS/CONCERNS:</h3> If you have any questions about the contents o
 
 
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"> BACK TO TOP </button>
+
+<center>Copyright Notice</center>
+
+<h3 class="fw-bold mb-3">
+The following describes the Copyright Notice for our http://www.aheadadvisors.com website which is owned and operated by Master Minds</h3>
+<p class="lh-base">
+The entire contents of our website are protected by intellectual property law, including international copyright and trademark laws. The owner of the copyrights and/or trademarks are our website, and/or other third party licensors or related entities.</p>
+
+<p class="lh-base">
+You do not own rights to any article, book, ebook, document, blog post, software, application, add-on, plugin, art, graphics, images, photos, video, webinar, recording or other materials viewed or listened to through or from our Master Minds website or via email or by way of protected content in a membership site. The posting of data on our website, such as a blog comment, does not change this fact and does not give you any right in the data. You surrender any rights to your content once it becomes part of our website.</p>
 
 
-BACK TO TOP
+
+
+
+
+
 
 
 
