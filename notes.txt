@@ -113,6 +113,16 @@ COPYRIGHT WARNING:</h3>  <p class="lh-base"> The legal notices and administrativ
 QUESTIONS/COMMENTS/CONCERNS: </h3>  <p class="lh-base"> If you have any questions about the contents of this page, or simply wish to reach us for any other reason, you may do so by emailing us at support@aheadadvisors.com</p> 
 
 
+<center>
+DMCA Compliance</center>
+
+<h3 class="fw-bold mb-3">
+The following describes the DMCA Compliance for our http://www.aheadadvisors.com website which is owned and operated by Master Minds</h3>
+
+
+<h3 class="fw-bold mb-3">
+We at Master Minds are committed to responding to any alleged copyright violations, should they occur. Notice of any alleged violation should take the form proposed by the U.S. Digital Millennium Copyright Act as revealed at http://www.copyright.gov.
+</h3>
 
 <h3 class="fw-bold mb-3">
 Remedy</h3>
@@ -156,7 +166,7 @@ COPYRIGHT WARNING: </h3><p class="lh-base"> The legal notices and administrative
 QUESTIONS/COMMENTS/CONCERNS: </h3><p class="lh-base"> If you have any questions about the contents of this page, or simply wish to reach us for any other reason, you may do so by emailing us at support@aheadadvisors.com</p>
 
 
-
+<button onclick="topFunction()" id="myBtn" title="Go to top"> BACK TO TOP </button>
 
 
 
