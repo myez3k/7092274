@@ -38,6 +38,11 @@
 ======================
 
 
+<h3 class="fw-bold mb-3">
+Anti-Spam Policy</h3>
+<p class="lh-base">
+The following describes the Anti-Spam Policy for our http://www.aheadadvisors.com website which is owned/operated by Master Minds.</p>
+
 
 <h3 class="fw-bold mb-3">
 What Is Spam?</h3>
@@ -82,12 +87,30 @@ You do not own rights to any article, book, ebook, document, blog post, software
 
 
 
+<h3 class="fw-bold mb-3">
+YOU MAY NOT MODIFY, COPY, REPRODUCE, REPUBLISH, UPLOAD, POST, TRANSMIT, OR DISTRIBUTE, IN ANY MANNER, THE MATERIAL ON OUR WEBSITE, INCLUDING TEXT, GRAPHICS, CODE AND/OR SOFTWARE.</h3> 
+<p class="lh-base">
+You must retain all copyright and other proprietary notices contained in the original material on any copy you make of the material. You may not sell or modify the material or reproduce, display, publicly perform, distribute, or otherwise use the material in any way for any public or commercial purpose. The use of paid material on any other website or in a networked computer environment for any purpose is prohibited. If you violate any of the terms or conditions, your permission to use the material automatically terminates and you must immediately destroy any copies you have made of the material.</p>
+
+<p class="lh-base">
+You are granted a nonexclusive, nontransferable, revocable license to use our Master Minds website only for private, personal, noncommercial reasons. You may print and download portions of material from the different areas of the website solely for your own non-commercial use, provided that you agree not to change the content from its original form. Moreover, you agree not to modify or delete any copyright or proprietary notices from the materials you print or download from Master Minds. Also note that any notice on any portion of our website that forbids printing & downloading trumps all prior statements and controls.</p>
+
+<p class="lh-base">
+As a user at Master Minds, you agree to use the products and services offered by our website in a manner consistent with all applicable local, state and federal laws and regulations. No material shall be stored or transmitted which infringes or violates the rights of others, which is unlawful, obscene, profane, indecent or otherwise objectionable, threatening, defamatory, or invasive of privacy or publicity rights.</p>
+
+<p class="lh-base">
+Our website prohibits conduct that might constitute a criminal offense, give rise to civil liability or otherwise violate any law. Any activity that restricts or inhibits any other Master Minds user from using the services of our website is also prohibited. Unless allowed by a written agreement, you may not post or transmit advertising or commercial solicitation on our website.</p> 
 
 
 
+<h3 class="fw-bold mb-3">
+CHANGE NOTICE:</h3>  <p class="lh-base"> As with any of our administrative and legal notice pages, the contents of this page can and will change over time. Accordingly, this page could read differently as of your very next visit. These changes are necessitated, and carried out by Master Minds, in order to protect you and our Master Minds website. If this page is important to you, you should check back frequently as no other notice of changed content will be provided either before or after the change takes effect.</p> 
 
+<h3 class="fw-bold mb-3">
+COPYRIGHT WARNING:</h3>  <p class="lh-base"> The legal notices and administrative pages on this website, including this one, have been diligently drafted by an attorney. We at Master Minds have paid to license the use of these legal notices and administrative pages on http://www.aheadadvisors.com for your protection and ours. This material may not be used in any way for any reason and unauthorized use is policed via Copyscape to detect violators. </p> 
 
-
+<h3 class="fw-bold mb-3">
+QUESTIONS/COMMENTS/CONCERNS: </h3>  <p class="lh-base"> If you have any questions about the contents of this page, or simply wish to reach us for any other reason, you may do so by emailing us at support@aheadadvisors.com</p> 
 
 
 
