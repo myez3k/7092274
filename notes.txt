@@ -114,8 +114,46 @@ QUESTIONS/COMMENTS/CONCERNS: </h3>  <p class="lh-base"> If you have any question
 
 
 
-
-
+<h3 class="fw-bold mb-3">
+Remedy</h3>
+<p class="lh-base">
+If any material infringes on the copyright of any offended party, we may remove the content from Master Minds, prevent access to it, terminate or block access for those responsible for the content, and/or any other action deemed appropriate. We may also pass along record of the incident for documentation and/or publication by third parties at our discretion.</p>
+<h3 class="fw-bold mb-3">
+Not Legal Advice/No Attorney-Client Relationship .</h3>
+<p class="lh-base">
+If you believe your rights have been violated, it can be a serious matter. This DMCA notice exists solely to effectuate our efforts, as website owners, to prevent and eliminate infringement on intellectual property rights. It is no substitute for the assistance of competent legal counsel. Other remedies and action, such as against an internet service provider (ISP), may exist. You may wish to seek legal help immediately.</p>
+<h3 class="fw-bold mb-3">
+Notification</h3>
+<p class="lh-base">
+For your convenience and to speed resolution, notice of alleged infringement may be tendered to Master Minds via email, using the email address and/or contact information provided on this website. We warn that you will be liable for any and all statutory and common law damages, as well as court costs and attorney fees, if you falsify a claim that your copyrights have been violated. Six figure awards have already been granted for bogus complaints, so seeking the help of competent counsel is advised. </p>
+<p class="lh-base">
+Assuming you still wish to assert copyright violation, you should provide the following to speed up the process:</p>
+<p class="lh-base">
+STEP 1. Identify in adequate detail the copyrighted item you believe has been violated, by providing the URL to the protected work, ISBN#, or otherwise. 
+STEP 2. Identify the URL of the webpage that you assert is infringing the copyrighted work listed in item #1 above.
+STEP 3. Provide contact information for yourself (email address is preferred, phone is suggested).
+STEP 4. Provide information sufficient to allow us to notify the owner/administrator of the allegedly infringing webpage or other content such as a blog or forum posting (email address is preferred).
+STEP 5. Include the following statement: "I have a good faith belief that use of the copyrighted materials described above as allegedly infringing is not authorized by the copyright owner, its agent, or the law."
+STEP 6. Include the following statement: "I swear, under penalty of perjury, that the information in the notification is accurate and that I am the copyright owner or am authorized to act on behalf of the owner of an exclusive right that is allegedly infringed."
+STEP 7. Digitally sign your affirmation.</p>
+<h3 class="fw-bold mb-3">
+Counter-Notification</h3>
+<p class="lh-base">
+Note that the party representing the affected website or provider of content can issue a counter-notification under sections 512(g)(2) and (3) of the Digital Millennium Copyright Act, and so we may again post or link to the content in that case.</p>
+<p class="lh-base">
+For your convenience, counter notification may be tendered via email, using the email address and/or contact information provided on this website. We warn that you will be liable for any and all statutory and common law damages, as well as court costs and attorney fees, if you falsify a claim that others’ copyrights have NOT been violated</p>
+<p class="lh-base">
+Assuming you still wish to file a counter-notice, you should provide the following to speed up the process:
+STEP 1. Identify the specific URLs or other unique identifying information of material that we have removed or disabled access to.
+STEP 2. Provide your name, address, telephone number, email address, and a statement that you consent to the jurisdiction of Federal District Court for the judicial district in which your address is located, and that you will accept service of process from the person who provided notification under subsection (c)(1)(C) or an agent of such person.
+STEP 3. Include the following statement: "I swear, under penalty of perjury, that I have a good faith belief that each item of content identified above was removed or disabled as a result of a mistake or misidentification of the material to be removed or disabled, or that the material identified by the complainant has been removed or disabled at the URL identified and will no longer be shown."
+STEP 4. Digitally sign the affirmation.</p>
+<h3 class="fw-bold mb-3">
+CHANGE NOTICE:</h3><p class="lh-base"> As with any of our administrative and legal notice pages, the contents of this page can and will change over time. Accordingly, this page could read differently as of your very next visit. These changes are necessitated, and carried out by Master Minds, in order to protect you and our Master Minds website. If this page is important to you, you should check back frequently as no other notice of changed content will be provided either before or after the change takes effect.</p>
+<h3 class="fw-bold mb-3">
+COPYRIGHT WARNING: </h3><p class="lh-base"> The legal notices and administrative pages on this website, including this one, have been diligently drafted by an attorney. We at Master Minds have paid to license the use of these legal notices and administrative pages on http://www.aheadadvisors.com for your protection and ours. This material may not be used in any way for any reason and unauthorized use is policed via Copyscape to detect violators.</p>
+<h3 class="fw-bold mb-3">
+QUESTIONS/COMMENTS/CONCERNS: </h3><p class="lh-base"> If you have any questions about the contents of this page, or simply wish to reach us for any other reason, you may do so by emailing us at support@aheadadvisors.com</p>
 
 
 
