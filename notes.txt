@@ -1,1 +1,47 @@
 
+
+ </p>
+ <h3 class="fw-bold mb-3">The Type of Data You Will Collect</h3>
+                        <p class="lh-base">This ranges from emails, physical and IP addresses, credit card details,
+                            phone numbers or tracking locations. CalOPPA goes a step further to mandate that commercial
+                            or online websites collecting information on California residents
+                            must categorically list the type of personal information collected.</p>
+
+
+<h3 class="fw-bold mb-3">
+What Is Spam?</h3>
+ <p class="lh-base">
+Spam is unsolicited email, also known as junk mail (received via email), or UCE (Unsolicited Commercial Email). Virtually all of us have opened the inbox of an email account and found emails from an unknown sender. By sending email only to those who have requested to receive it, we at Master Minds are following accepted permission-based email guidelines.</p>
+
+ <h3 class="fw-bold mb-3">
+What About The Laws Against Spam?</h3>
+
+<p class="lh-base">
+They exist. However, as with any body of laws, any individual State spam statutes can and will vary. The spam laws of each State can not only vary, but also have different definitions of unsolicited commercial email. Additionally, there may be various federal agencies keeping track of spam, including the Federal Trade Commission (FTC). At the Federal level, the CAN-SPAM Act of 2003 promulgates some attempt at a coherent and unified approach to unsolicited commercial email. Ultimately, it would be difficult to enforce spam law violations on any consistent or pervasive basis, so your own vigilance is your own best first line of defense.</p>
+ <h3 class="fw-bold mb-3">
+Beyond that, we protect you by ensuring that you are 100% in control of whether or not you ever hear from Master Minds by email initially or in the future, as detailed in our “No Tolerance” policy below.</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
